@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-.body {
-  background-color: #caff42;
-}
-
 .body p {
   margin-bottom: 0;
 }
