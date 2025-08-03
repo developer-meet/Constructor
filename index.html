@@ -16,11 +16,75 @@
       crossorigin="anonymous"
     />
   </head>
-  <body></body>
+  <body class="body">
+    <div class="ai-sec max-width-1280px mx-auto">
+      <div class="">
+        <div class="ai-robot-icon-sec mx-auto d-flex justify-content-center">
+          <img src="./Assets/Icon 1.png" alt="" />
+        </div>
+        <p class="ai-main-heading roboto fw-medium mt-4 text-center mx-auto">
+          👋 Hi! I'm GORA, the AI assistant from GoRebel. I can help you with:
+        </p>
+        <div class="ai-list-sec ps-4">
+          <ul class="list-unstyled fw-medium roboto">
+            <li class="mb-4">🔹 Understanding our AI services</li>
+            <li class="mb-4">🔹 Scheduling a meeting</li>
+            <li>🔹 Exploring use cases</li>
+          </ul>
+        </div>
+        <p class="ai-first-question fw-medium roboto ps-4">
+          What would you like to do?
+        </p>
+        <div class="ai-btns-sec roboto">
+          <div>
+            <button class="fw-medium">How can GoRebel help me?</button>
+            <button class="fw-medium">Schedule a Meeting</button>
+            <button class="fw-medium">Show me Projects</button>
+            <button class="fw-medium">Talk to Human</button>
+          </div>
+        </div>
+        <form class="ai-typing-sec d-flex justify-content-between">
+          <input
+            class="roboto fw-medium"
+            type="text"
+            placeholder="Type Here..."
+            value=""
+          />
+          <div class="d-flex align-items-center justify-content-end">
+            <button class="me-3">
+              <img src="./Assets/Icon 2.png" alt="" />
+            </button>
+            <button class="me-4">
+              <img src="./Assets/Icon 3.png" alt="" />
+            </button>
+            <button class="ai-send-btn">
+              <img src="./Assets/Icon 4.png" alt="" />
+            </button>
+          </div>
+        </form>
+        <p class="ai-sec-last-line roboto text-center pt-5 pb-3">
+          We build end-to-end AI solutions, from idea to deployment.
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-sec max-width-1280px mx-auto d-flex justify-content-end">
+      <p></p>
+    </div>
+
+    <div class="Section-2"></div>
+  </body>
   <!-- Bootstrap JS Link -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"
-  ></script>
+  >
+    const outerBox = document.querySelector('.ai-btns-sec')
+      outerBox.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      outerBox.scrollLeft += e.deltaY;
+    });
+  </script>
 </html>

@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+.body {
+  background-color: #caff42;
+}
+
+.body p {
+  margin-bottom: 0;
+}
+
+.body ul {
+  padding-left: 0;
+}
+
 :root {
   --white: white;
   --black: black;
@@ -21,4 +33,124 @@
 /* Width css */
 .max-width-1280px {
   max-width: 1280px;
+}
+
+/* Hero Section */
+
+.hero-sec {
+  height: 1800px;
+  background-color: var(--black);
+}
+
+.ai-sec {
+  position: sticky !important;
+  top: 0px;
+  left: 0;
+  overflow: hidden !important;
+}
+
+.ai-sec div {
+  width: 40%;
+  background-color: var(--white);
+}
+
+.ai-robot-icon-sec {
+  padding-top: 100px;
+}
+
+.ai-main-heading,
+.ai-list-sec ul li,
+.ai-first-question {
+  font-size: 20px;
+  color: var(--black) !important;
+}
+
+.ai-main-heading {
+  width: 90% !important;
+}
+
+.ai-list-sec {
+  width: 100% !important;
+  margin: 80px 0px 40px 0px;
+}
+
+.hero-sec p {
+  width: 60%;
+  color: var(--white);
+}
+
+.ai-first-question {
+  margin-bottom: 100px !important;
+}
+
+.ai-btns-sec {
+  width: 100% !important;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-bottom: 24px;
+  padding-left: 15px;
+}
+
+.ai-btns-sec::-webkit-scrollbar {
+  display: none;
+}
+
+.ai-btns-sec div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 700px;
+}
+
+.ai-btns-sec button {
+  padding: 6px !important;
+  margin-right: 20px;
+  border-radius: 8px;
+  background-color: var(--white);
+  border: 1px solid var(--sim-light-gray);
+}
+
+.ai-typing-sec {
+  padding: 15px;
+  background-color: rgba(202, 255, 66, 0.1);
+}
+
+.ai-typing-sec input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+}
+
+.ai-typing-sec input::placeholder {
+  color: var(--black);
+}
+
+.ai-typing-sec div {
+  background-color: transparent;
+}
+
+.ai-typing-sec div button {
+  border: 0px;
+  height: 34px;
+  width: 34px;
+  background-color: transparent;
+}
+
+.ai-typing-sec div .ai-send-btn {
+  background-color: var(--sim-light-green) !important;
+  border-radius: 100px;
+  height: 64px;
+  width: 64px;
+}
+
+.ai-sec-last-line {
+  width: 100% !important;
+  background-color: var(--black) !important;
+  color: var(--white);
+  font-size: 30px;
+  padding: 0 10px;
 }
