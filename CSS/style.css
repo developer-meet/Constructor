@@ -203,3 +203,45 @@
   width: auto;
   font-size: 24px;
 }
+
+/* About Us Section */
+
+.about-main-heading h2 {
+  width: 200px !important;
+  font-size: 40px;
+  color: var(--sim-blue);
+  position: relative;
+}
+
+.about-main-heading h2::after {
+  content: "";
+  position: absolute;
+  width: 40% !important;
+  background-color: var(--sim-light-green);
+  height: 4px;
+  bottom: -5px;
+  right: 20px;
+}
+
+.about-para-1 {
+  font-size: 20px;
+  color: var(--black);
+}
+
+.about-sub-heading {
+  font-size: 34px;
+}
+
+.about-para-2,
+.about-para-3 {
+  width: 85% !important;
+  font-size: 24px;
+  color: var(--sim-light-gray);
+}
+
+.about-btn {
+  background-color: var(--sim-blue);
+  color: var(--white);
+  font-size: 24px;
+  border-radius: 10px;
+}
