@@ -244,6 +244,7 @@
   color: var(--white);
   font-size: 24px;
   border-radius: 10px;
+  border: none;
 }
 
 /* Partners Section */
@@ -268,4 +269,60 @@
   height: 4px;
   bottom: 1px;
   right: 36px;
+}
+
+/* Work Section */
+
+.work-sec-main-heading h2 {
+  width: 400px !important;
+  font-size: 40px;
+  color: var(--sim-blue);
+  position: relative;
+}
+
+.work-sec-main-heading h2::after {
+  content: "";
+  position: absolute;
+  width: 22% !important;
+  background-color: var(--sim-light-green);
+  height: 4px;
+  bottom: 1px;
+  right: 90px;
+}
+
+.work-sec-main-para {
+  font-size: 20px;
+  color: var(--black);
+}
+
+.work-step-sec .row .col {
+  width: 45%;
+}
+
+.work-step-sec .row {
+  gap: 30px 0px !important;
+}
+
+.work-step-sec .row .col div .work-step-sec-heading {
+  font-size: 28px;
+  color: var(--black);
+}
+
+.work-step-sec-para {
+  font-size: 22px;
+  color: var(--sim-light-gray);
+}
+
+.quality-sec {
+  background-color: rgba(202, 255, 66, 0.2);
+}
+
+.quality-main-heading {
+  font-size: 25px;
+  color: var(--black);
+}
+
+.quality-sub-para {
+  font-size: 10px;
+  color: var(--sim-light-gray);
 }
