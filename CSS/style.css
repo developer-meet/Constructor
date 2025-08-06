@@ -574,6 +574,42 @@
   right: 36px;
 }
 
+.partners-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.partners-img-sec {
+  display: flex;
+  width: max-content;
+  animation: scroll-x 10s linear infinite;
+}
+
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .body-right-sec .partners {
+    padding: 48px 10px !important;
+  }
+
+  .partners-main-heading h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .partners-main-heading h2::after {
+    width: 27% !important;
+    right: 64px;
+  }
+}
+
 /* Work Section */
 
 .work-sec-main-heading h2 {
