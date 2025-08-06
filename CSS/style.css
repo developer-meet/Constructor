@@ -329,6 +329,42 @@
   border: none;
 }
 
+@media screen and (max-width: 576px) {
+  .body-right-sec .about-us-sec {
+    padding: 48px 10px !important;
+  }
+
+  .about-main-heading h2 {
+    font-size: 30px;
+  }
+
+  .about-main-heading h2::after {
+    right: 38px;
+    width: 35% !important;
+  }
+
+  .about-para-1 {
+    font-size: 16px;
+  }
+
+  .about-sub-heading {
+    font-size: 20px;
+  }
+
+  .about-us-sec .about-para-2,
+  .about-us-sec .about-para-3 {
+    font-size: 16px;
+    margin: 0 0 20px !important;
+    text-align: center;
+    width: 100% !important;
+  }
+
+  .about-us-sec .about-btn {
+    font-size: 16px;
+    padding: 6px 20px !important;
+  }
+}
+
 /* Projects Section */
 
 .project-sec-main-heading h2 {
