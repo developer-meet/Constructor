@@ -19,8 +19,8 @@
     <!-- Font Awesome Link-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.css"
+      integrity="sha512-xWIcG98IArXxegzS8Vo9iYMKuPgbXOG8O1mlHrj4MmNFxsBDltGxHJGg4JK80MVEmLRpdbWtphhm+S6Wx9o73g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -101,7 +101,7 @@
               </div>
             </button>
             <button
-              class="d-flex justify-content-between align-items-center px-3 py-2"
+              class="hero-top-btn-2 d-flex justify-content-between align-items-center px-3 py-2"
             >
               <div class="d-flex align-items-center">
                 <img src="./Assets/Icon 5.png" alt="" />
@@ -112,15 +112,42 @@
               </div>
             </button>
           </div>
-          <div class="hero-menu-sec">
-            <ul class="list-unstyled d-flex justify-content-between">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Partnership</a></li>
-              <li><a href="#">How we Work</a></li>
-            </ul>
-          </div>
+          <nav class="navbar hero-menu-sec navbar-expand-lg p-0">
+            <div class="container-fluid p-0">
+              <button
+                class="navbar-toggler py-3 px-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars fa-xl" style="color: #ffffff"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav w-100 d-flex justify-content-between">
+                  <li class="nav-item align-items-center">
+                    <a class="nav-link text-white" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Partnership</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">How We Work</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
           <div class="heading-sec text-center">
             <h1 class="mb-0">
               Turn Your AI Vision into Business Impact - Fast.
@@ -139,7 +166,7 @@
               </div>
             </button>
             <button
-              class="d-flex justify-content-between align-items-center px-3 py-2"
+              class="hero-ai-pro-btn d-flex justify-content-between align-items-center px-3 py-2"
             >
               <p class="fw-medium me-3">Explore AI Projects</p>
               <div class="hero-arrow-sec">

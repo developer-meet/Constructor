@@ -210,19 +210,27 @@
   margin-bottom: 90px;
 }
 
+.hero-menu-sec ul li {
+  height: 30px;
+}
+
 .hero-menu-sec ul li a {
   color: var(--white);
   font-size: 20px;
-  padding-bottom: 8px;
+  padding: 0 0 2px !important;
 }
 
-.hero-menu-sec ul li a:hover {
+.hero-menu-sec ul li:hover a {
   border-bottom: 2px solid var(--white);
 }
 
 .heading-sec h1 {
   font-size: 56px;
   color: var(--white);
+}
+
+.navbar div button {
+  border: 2px solid var(--white);
 }
 
 .hero-img-sec {
@@ -232,6 +240,50 @@
 .hero-bottom-btn-sec button p {
   width: auto;
   font-size: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .hero-menu-sec ul {
+    margin-top: 20px;
+  }
+  .hero-menu-sec ul li {
+    height: auto !important;
+  }
+  .hero-menu-sec ul li a {
+    padding: 8px 10px !important;
+    border: none !important;
+  }
+  .hero-menu-sec ul li:hover {
+    background-color: rgb(19, 19, 19);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .body .body-right-sec .hero-sec {
+    padding: 48px 10px !important;
+  }
+
+  .heading-sec h1 {
+    font-size: 40px;
+  }
+
+  .hero-sec .hero-bottom-btn-sec {
+    display: block !important;
+  }
+
+  .hero-bottom-btn-sec .hero-ai-pro-btn {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .hero-main-container .hero-top-btn-sec {
+    display: block !important;
+  }
+
+  .hero-top-btn-sec .hero-top-btn-2 {
+    margin-top: 20px !important;
+  }
 }
 
 /* About Us Section */
