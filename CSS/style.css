@@ -471,6 +471,85 @@
   background-color: var(--sim-blue) !important;
 }
 
+@media screen and (max-width: 576px) {
+  .body-right-sec .project-sec {
+    padding: 48px 10px !important;
+  }
+
+  .project-sec-main-heading h2 {
+    font-size: 30px !important;
+  }
+
+  .project-sec-main-heading h2::after {
+    width: 28% !important;
+    right: 44px;
+  }
+
+  .project-sec-line1,
+  .project-sec-line2 {
+    font-size: 16px;
+  }
+
+  .carousel .carousel-inner {
+    width: 86%;
+  }
+
+  .carousel .carousel-left-btn span,
+  .carousel .carousel-right-btn span {
+    height: 24px;
+    width: 24px;
+  }
+
+  .carousel-indicators button {
+    height: 15px !important;
+    width: 15px !important;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .carousel .carousel-inner {
+    width: 80%;
+  }
+
+  .carousel-content .carousel-left-sec,
+  .carousel-content .carousel-right-sec {
+    padding: 5px !important;
+  }
+
+  .carousel-content div .title-box,
+  .carousel-content div .Summary-box,
+  .carousel-content div .Industry-box,
+  .carousel-content div .Outcome-box {
+    display: block !important;
+    margin-bottom: 12px !important;
+  }
+
+  .title-box .title,
+  .Summary-box .title,
+  .Industry-box .title,
+  .Outcome-box .title {
+    width: 100% !important;
+  }
+
+  .title-box .title-des,
+  .Summary-box .title-des,
+  .Industry-box .title-des,
+  .Outcome-box .title-des {
+    width: 100% !important;
+    margin-top: 2px !important;
+  }
+
+  .carousel-content div .carousel-btn {
+    font-size: 10px;
+    padding: 6px 20px !important;
+  }
+
+  .carousel-indicators button {
+    height: 10px !important;
+    width: 10px !important;
+  }
+}
+
 /* Partners Section */
 
 .partners {
