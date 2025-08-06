@@ -742,7 +742,6 @@
 .footer-form input {
   color: var(--white);
   outline: none;
-  width: 70%;
 }
 
 .footer-form input[type="email"] {
@@ -787,4 +786,81 @@
 .coampany-email p {
   color: var(--white);
   font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-menu-sec ul {
+    display: block !important;
+  }
+
+  .footer-menu-sec ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .footer-menu-sec ul li:hover {
+    background-color: rgb(19, 19, 19);
+  }
+
+  .footer-menu-sec ul li a {
+    border: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .body-right-sec .footer {
+    padding: 48px 10px !important;
+  }
+
+  .footer-main-heading p {
+    font-size: 20px;
+  }
+
+  .footer-form input {
+    padding: 10px 10px 10px 40px !important;
+  }
+
+  .footer-form button {
+    height: auto;
+    font-size: 16px;
+    padding: 10px 10px !important;
+  }
+
+  .footer-phone-num p {
+    font-size: 16px !important;
+  }
+
+  .footer-contect-sec .footer-add-email {
+    display: block !important;
+  }
+
+  .footer-add-email .location,
+  .footer-add-email .coampany-email {
+    width: 100% !important;
+  }
+
+  .footer-add-email .location p,
+  .footer-add-email .coampany-email p {
+    font-size: 16px;
+  }
+
+  .footer-add-email .coampany-email {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer .footer-form {
+    display: block !important;
+  }
+
+  .footer-form input,
+  .footer-form button {
+    width: 100%;
+  }
+
+  .footer-form button {
+    margin-top: 20px;
+    padding: 10px 0 !important;
+  }
 }
