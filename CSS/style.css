@@ -32,23 +32,43 @@
 }
 
 /* Width css */
-.max-width-1280px {
+/* .max-width-1280px {
   max-width: 1280px;
-}
+} */
 
 /* AI Section */
 .ai-sec {
-  position: fixed !important;
+  position: sticky !important;
   top: 0px;
-  left: 50%;
-  overflow: hidden !important;
-  width: 640px !important;
-  transform: translate(-100%, -0%);
+  width: 600px !important;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.ai-sec div {
+.ai-sec::-webkit-scrollbar {
+  display: none;
+}
+
+.body-right-sec {
+  width: calc(100% - 600px);
+}
+
+.ai-sec .ai-sub-box {
   width: 100%;
+  height: 190vh;
   background-color: var(--white);
+  margin: 0;
+  overflow: hidden !important;
+}
+
+.ai-sec .ai-sub-box .sub-box-top,
+.ai-sec .ai-sub-box .sub-box-bottom {
+  width: 100%;
+  height: 50%;
+  padding: 0;
 }
 
 .ai-robot-icon-sec {
@@ -150,6 +170,16 @@
   color: var(--white);
   font-size: 30px;
   padding: 0 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .body .ai-sec {
+    display: none;
+  }
+
+  .body .body-right-sec {
+    width: 100%;
+  }
 }
 
 /* Hero Section */
