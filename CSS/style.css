@@ -864,3 +864,219 @@
     padding: 10px 0 !important;
   }
 }
+
+/* pop-up */
+
+.pop {
+  height: 30px;
+  width: 30px;
+  background-color: var(--sim-light-green);
+  border: none;
+  border-radius: 100px;
+  display: none !important;
+}
+
+@media screen and (max-width: 1199px) {
+  .pop {
+    display: block !important;
+    position: fixed !important;
+    bottom: 20px !important;
+    left: 20px !important;
+  }
+}
+
+/* Ai pop up sec */
+
+.pop-sub-box-bottom {
+  background-color: var(--white);
+  padding: 0 !important;
+  border-radius: 15px;
+}
+
+.ai-pop-sec {
+  visibility: hidden !important;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(121, 117, 117, 0.5);
+  transition: visibility 0s, opacity 1s;
+}
+
+.ai-pop-sec:target {
+  visibility: visible !important;
+  opacity: 1;
+}
+
+.ai-pop-sec:target .body-right-sec {
+  display: none !important;
+}
+
+.ai-sub-pop-box {
+  background-color: var(--white);
+  width: 80%;
+  height: 80%;
+  border-radius: 15px !important;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.for-slider {
+  width: 120%;
+}
+
+.ai-pop-btns-sec {
+  width: 100% !important;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-bottom: 24px;
+  padding-left: 15px;
+}
+
+.ai-pop-btns-sec::-webkit-scrollbar {
+  display: none;
+}
+
+.ai-pop-btns-sec div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 700px;
+}
+
+.ai-pop-btns-sec button {
+  padding: 6px !important;
+  margin-right: 20px;
+  border-radius: 8px;
+  background-color: var(--white);
+  border: 1px solid var(--sim-light-gray);
+}
+
+.ai-pop-typing-sec {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(202, 255, 66, 0.1);
+}
+
+.ai-pop-typing-sec input {
+  width: 50%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+}
+
+.ai-pop-typing-sec input::placeholder {
+  color: var(--black);
+}
+
+.ai-pop-typing-sec div {
+  background-color: transparent;
+}
+
+.ai-pop-typing-sec div button {
+  border: 0px;
+  height: 34px;
+  width: 34px;
+  background-color: transparent;
+}
+
+.ai-pop-typing-sec div .ai-send-btn {
+  background-color: var(--sim-light-green) !important;
+  border-radius: 100px;
+  height: 64px;
+  width: 64px;
+}
+
+.ai-pop-sec-last-line {
+  width: 100% !important;
+  background-color: var(--black) !important;
+  color: var(--white);
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+.back-to-home button {
+  border-radius: 10px;
+  background-color: var(--white);
+  border: 2px solid var(--black);
+}
+
+.back-to-home button a {
+  color: var(--black);
+}
+
+.back-to-home button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.back-to-home button:hover a {
+  color: var(--white);
+}
+
+@media screen and (min-width: 1199px) {
+  .ai-pop-sec {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pop-sub-box-top .ai-pop-list-sec {
+    padding-left: 0 !important;
+  }
+
+  .ai-pop-list-sec ul li {
+    font-size: 14px;
+  }
+
+  .ai-pop-first-question {
+    font-size: 15px;
+  }
+
+  .ai-pop-btns-sec div button {
+    font-size: 14px;
+  }
+
+  .pop-sub-box-bottom .ai-pop-typing-sec {
+    display: block !important;
+  }
+
+  .ai-pop-typing-sec input {
+    width: 100%;
+  }
+
+  .ai-pop-typing-sec div {
+    width: 100%;
+    justify-content: left !important;
+    margin-top: 20px;
+  }
+
+  .pop-sub-box-bottom .ai-pop-sec-last-line {
+    padding: 10px !important;
+    font-size: 16px;
+  }
+
+  .pop-sub-box-bottom .back-to-home {
+    padding: 5px !important;
+  }
+
+  .back-to-home button {
+    padding: 5px !important;
+  }
+
+  .back-to-home button a {
+    font-size: 14px;
+  }
+}
